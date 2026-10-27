@@ -1,0 +1,1821 @@
+/* =====================================================================
+   essAI : feuille de style commune à toutes les pages
+   Sommaire :
+     1. Charte graphique (variables)       6. Sections et cartes
+     2. Base                              7. Accueil : démo du téléphone
+     3. Utilitaires                       8. Accueil : carrousel
+     4. En-tête et navigation             9. Animations d'apparition
+     5. Boutons                          10. Pied de page
+                                         11. Responsive (tablette, téléphone)
+   ===================================================================== */
+
+/* 1. Charte graphique : couleurs tirées du logo -------------------------- */
+:root {
+  --vert: #12271F;          /* vert forêt du logo : titres, en-tête, pied de page */
+  --creme: #FBFAF6;         /* fond crème du logo */
+  --sauge: #8FB3A0;         /* accents doux, cartes */
+  --sauge-clair: #DCE8E1;
+  --ambre: #E0A84F;         /* boutons d'action, l'« étincelle » */
+  --ambre-fonce: #C98E33;
+  --texte: #1B1F1D;
+  --gris: #5F6863;
+  --gris-clair: #E4E6E3;
+  --blanc: #FFFFFF;
+  --rayon: 16px;            /* arrondis, comme l'icône de l'appli */
+  --ombre: 0 10px 30px rgba(18, 39, 31, 0.12);
+  --largeur: 1140px;        /* largeur maximale du contenu */
+  --police: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 2. Base ----------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--police);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--texte);
+  background-color: var(--blanc);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--vert);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--vert);
+}
+
+/* Contour visible pour la navigation au clavier */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--ambre);
+  outline-offset: 3px;
+}
+
+/* 3. Utilitaires ------------------------------------------------------------ */
+.conteneur {
+  width: 100%;
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.texte-centre {
+  text-align: center;
+}
+
+.sous-titre {
+  color: var(--gris);
+  font-size: 1.1rem;
+  max-width: 640px;
+}
+
+.texte-centre .sous-titre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texte lu par les lecteurs d'écran mais invisible à l'écran */
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* 4. En-tête et navigation ------------------------------------------------ */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--creme);
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.entete__barre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vert);
+  text-decoration: none;
+}
+
+/* Le PNG du logo a des coins noirs : on les arrondit pour les masquer */
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  border-bottom-color: var(--ambre);
+}
+
+.nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+/* Le bouton d'appel à l'action garde son propre style dans le menu */
+.nav .bouton {
+  border-bottom: none;
+  padding: 10px 22px;
+}
+
+/* Bouton « burger » : caché sur ordinateur, visible sur téléphone (voir §11) */
+.burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  border-radius: 2px;
+  background-color: var(--vert);
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+/* Le burger devient une croix quand le menu est ouvert */
+.burger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* 5. Boutons ---------------------------------------------------------------- */
+.bouton {
+  display: inline-block;
+  padding: 14px 30px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.bouton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ombre);
+}
+
+.bouton--principal {
+  background-color: var(--ambre);
+  color: var(--texte);
+}
+
+.bouton--principal:hover {
+  background-color: var(--ambre-fonce);
+}
+
+.bouton--contour {
+  background-color: transparent;
+  border-color: var(--vert);
+  color: var(--vert);
+}
+
+.bouton--sombre {
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.boutons--centre {
+  justify-content: center;
+}
+
+/* 6. Sections et cartes ----------------------------------------------------- */
+.section {
+  padding: 96px 0;
+}
+
+.section--creme {
+  background-color: var(--creme);
+}
+
+.section--sombre {
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.section--sombre h2 {
+  color: var(--creme);
+}
+
+.grille-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.carte {
+  padding: 32px;
+  background-color: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--rayon);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carte:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ombre);
+}
+
+.carte__icone {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  color: var(--vert);
+}
+
+.carte p {
+  color: var(--gris);
+  margin: 0;
+}
+
+/* Hero (haut de la page d'accueil) */
+.hero {
+  padding: 72px 0 96px;
+  background-color: var(--creme);
+}
+
+.hero__grille {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero__accroche {
+  font-size: 1.2rem;
+  color: var(--gris);
+  max-width: 520px;
+}
+
+.hero__transparence {
+  font-style: italic;
+  color: var(--vert);
+}
+
+/* Liste des intégrations sous forme d'étiquettes */
+.etiquettes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.etiquettes li {
+  padding: 12px 24px;
+  border: 2px solid var(--vert);
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--vert);
+  background-color: var(--blanc);
+}
+
+/* Cartes d'offres (aperçu sur l'accueil) */
+.offre {
+  text-align: left;
+}
+
+.offre--mise-en-avant {
+  border: 2px solid var(--vert);
+  background-color: var(--creme);
+}
+
+.offre__prix {
+  white-space: nowrap;      /* le prix et « /mois » restent sur la même ligne */
+  margin: 12px 0 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--texte);
+}
+
+.offre__prix small {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gris);
+}
+
+.offre__ancien {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gris);
+  text-decoration: line-through;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--vert);
+  background-color: var(--sauge-clair);
+}
+
+/* Bandeau final d'appel à l'action */
+.appel {
+  padding: 56px 32px;
+  border-radius: 24px;
+  text-align: center;
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.appel h2 {
+  color: var(--creme);
+}
+
+/* 7. Accueil : démo du téléphone ------------------------------------------- */
+.telephone {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 44px;
+  background-color: var(--texte);
+  box-shadow: var(--ombre);
+}
+
+/* L'encoche du téléphone */
+.telephone::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 90px;
+  height: 18px;
+  margin-left: -45px;
+  border-radius: 10px;
+  background-color: var(--texte);
+}
+
+.telephone__ecran {
+  min-height: 540px;
+  padding: 52px 18px 22px;
+  border-radius: 32px;
+  background-color: var(--creme);
+  font-size: 0.85rem;
+}
+
+.demo__statut {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-weight: 700;
+  color: var(--vert);
+}
+
+/* Le petit avatar de l'appli, dessiné en CSS */
+.avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--vert);
+  border-radius: 50%;
+  background-color: var(--sauge);
+}
+
+.avatar__oeil {
+  position: absolute;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--vert);
+  animation: clignement 4s infinite;
+}
+
+.avatar__oeil--gauche {
+  left: 8px;
+}
+
+.avatar__oeil--droit {
+  right: 8px;
+}
+
+.avatar__bouche {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  width: 12px;
+  height: 6px;
+  margin-left: -6px;
+  border: 2px solid var(--vert);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+@keyframes clignement {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+/* L'onde de la voix : des barres qui montent et descendent */
+.onde {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 44px;
+  margin-bottom: 16px;
+}
+
+.onde span {
+  width: 5px;
+  height: 8px;
+  border-radius: 3px;
+  background-color: var(--vert);
+}
+
+.demo--ecoute .onde span {
+  animation: onde 0.9s ease-in-out infinite;
+}
+
+.onde span:nth-child(2n) { animation-delay: 0.15s; }
+.onde span:nth-child(3n) { animation-delay: 0.3s; }
+.onde span:nth-child(4n) { animation-delay: 0.45s; }
+
+@keyframes onde {
+  0%, 100% { height: 8px; }
+  50% { height: 40px; }
+}
+
+.demo__transcription {
+  min-height: 112px;
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--gris-clair);
+  border-radius: 14px;
+  background-color: var(--blanc);
+}
+
+/* Curseur qui clignote pendant l'écriture de la transcription */
+.demo--ecriture .demo__transcription::after {
+  content: "▍";
+  color: var(--ambre-fonce);
+  animation: curseur 0.8s steps(1) infinite;
+}
+
+@keyframes curseur {
+  50% { opacity: 0; }
+}
+
+.demo__resultat {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background-color: var(--sauge);
+  font-weight: 700;
+  color: var(--vert);
+}
+
+.demo__resultat li {
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+/* Tant qu'aucun résultat n'est affiché, la zone est un simple cadre en pointillés */
+.demo--animee:not(.demo--resultats) .demo__resultat {
+  background-color: transparent;
+  outline: 2px dashed var(--sauge);
+  outline-offset: -2px;
+}
+
+/* Pendant l'animation, les résultats sont cachés tant qu'ils n'ont pas la classe « visible » */
+.demo--animee .demo__resultat li:not(.visible) {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+.demo__destinations {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.demo__destinations li {
+  flex: 1;
+  padding: 12px 4px;
+  border: 2px solid var(--vert);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--vert);
+  background-color: var(--blanc);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.demo__destinations li.active {
+  background-color: var(--vert);
+  color: var(--creme);
+  transform: translateY(-4px);
+}
+
+.demo__micro {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--ambre);
+}
+
+.demo--ecoute .demo__micro {
+  animation: pulsation 1.2s infinite;
+}
+
+@keyframes pulsation {
+  0% { box-shadow: 0 0 0 0 rgba(224, 168, 79, 0.6); }
+  100% { box-shadow: 0 0 0 18px rgba(224, 168, 79, 0); }
+}
+
+/* 8. Accueil : carrousel ----------------------------------------------------- */
+.carrousel {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Sans JavaScript : les cartes défilent à la main (défilement horizontal) */
+.carrousel__piste {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  list-style: none;
+  margin: 0;
+  padding: 8px 4px 20px;
+}
+
+.carrousel__carte {
+  flex: 0 0 calc((100% - 48px) / 3);
+  scroll-snap-align: start;
+  padding: 28px;
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--rayon);
+  background-color: var(--blanc);
+}
+
+.carrousel__phrase {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vert);
+}
+
+.carrousel__effet {
+  margin: 0;
+  color: var(--gris);
+}
+
+/* Avec JavaScript : la piste glisse avec transform (classe ajoutée par carrousel.js) */
+.carrousel--js {
+  padding: 0 64px;          /* place réservée aux flèches, de chaque côté */
+}
+
+.carrousel--js .carrousel__fenetre {
+  overflow: hidden;
+}
+
+.carrousel--js .carrousel__piste {
+  overflow: visible;
+  transition: transform 0.5s ease;
+}
+
+.carrousel__fleche {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -36px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--vert);
+  color: var(--creme);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.carrousel__fleche--prec {
+  left: 0;
+}
+
+.carrousel__fleche--suiv {
+  right: 0;
+}
+
+.carrousel__points {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.carrousel__points button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--gris-clair);
+  cursor: pointer;
+}
+
+.carrousel__points button[aria-current="true"] {
+  width: 32px;
+  border-radius: 6px;
+  background-color: var(--vert);
+}
+
+/* Les flèches et les points n'apparaissent que si le JavaScript fonctionne */
+.carrousel:not(.carrousel--js) .carrousel__fleche,
+.carrousel:not(.carrousel--js) .carrousel__points {
+  display: none;
+}
+
+/* 8 bis. Page Tarifs ------------------------------------------------------- */
+.conteneur--etroit {
+  max-width: 820px;
+}
+
+/* Bascule mensuel / annuel : cachée sans JavaScript (elle ne servirait à rien) */
+.bascule {
+  display: none;
+  margin-top: 24px;
+  padding: 4px;
+  border: 2px solid var(--vert);
+  border-radius: 999px;
+  background-color: var(--blanc);
+}
+
+.js .bascule {
+  display: inline-flex;
+}
+
+.bascule__option {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vert);
+  cursor: pointer;
+}
+
+.bascule__option[aria-pressed="true"] {
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.bascule__remise {
+  margin-left: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background-color: var(--ambre);
+  color: var(--texte);
+}
+
+.section--offres {
+  padding-top: 40px;
+}
+
+.offres {
+  align-items: stretch;
+  margin-top: 0;
+}
+
+.offre-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.offre-detail__nom {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.offre-detail__cible {
+  min-height: 3.2em;
+}
+
+.offre-detail__ruban {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  margin: 0;
+  padding: 4px 18px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: var(--ambre);
+  color: var(--texte);
+}
+
+.offre-detail__liste {
+  flex-grow: 1;
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.offre-detail__liste li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 28px;
+}
+
+/* Coche dessinée en CSS devant chaque avantage */
+.offre-detail__liste li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--vert);
+  font-weight: 700;
+}
+
+.offre-detail .bouton {
+  text-align: center;
+}
+
+.note-prix {
+  margin-top: 28px;
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+/* Tableau comparatif : défile horizontalement s'il est trop large */
+.tableau-cadre {
+  position: relative;       /* contient les textes masqués (.invisible) du tableau */
+  margin-top: 32px;
+  overflow-x: auto;
+  border-radius: var(--rayon);
+  box-shadow: var(--ombre);
+}
+
+.tableau {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  background-color: var(--blanc);
+}
+
+.tableau th,
+.tableau td {
+  padding: 16px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.tableau thead th {
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.tableau tbody th {
+  text-align: left;
+  font-weight: 600;
+}
+
+.tableau tbody tr:nth-child(even) {
+  background-color: var(--creme);
+}
+
+.tableau tbody tr:hover {
+  background-color: var(--sauge-clair);
+}
+
+.oui {
+  color: var(--vert);
+  font-weight: 700;
+}
+
+.non {
+  color: var(--gris);
+}
+
+/* Où va ton argent : texte à gauche, barres à droite */
+.argent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.barres {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.barres li {
+  margin-bottom: 22px;
+}
+
+.barres__libelle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.barres__piste {
+  display: block;
+  height: 18px;
+  border-radius: 9px;
+  background-color: var(--gris-clair);
+  overflow: hidden;
+}
+
+.barres__remplissage {
+  display: block;
+  height: 100%;
+  border-radius: 9px;
+  transition: width 1.2s ease;
+}
+
+.barres__remplissage--serveurs {
+  width: 60%;
+  background-color: var(--vert);
+}
+
+.barres__remplissage--dev {
+  width: 30%;
+  background-color: var(--sauge);
+}
+
+.barres__remplissage--frais {
+  width: 10%;
+  background-color: var(--ambre);
+}
+
+/* Avec JavaScript, les barres partent de zéro et se remplissent quand on arrive dessus */
+.js .barres:not(.visible) .barres__remplissage {
+  width: 0;
+}
+
+/* FAQ en accordéon avec <details> et <summary> */
+.faq details {
+  margin-bottom: 12px;
+  border: 1px solid var(--gris-clair);
+  border-radius: 12px;
+  background-color: var(--blanc);
+}
+
+.faq summary {
+  position: relative;
+  padding: 18px 56px 18px 22px;
+  font-weight: 700;
+  color: var(--vert);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Le « + » devient « − » quand la question est ouverte */
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--gris);
+}
+
+/* 8 ter. Pages Fonctionnalités, Contact et À propos ------------------------------ */
+
+/* Mises en page à deux colonnes */
+.deux-colonnes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.grille-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+/* Sommaire de la page Fonctionnalités : boutons vers les sections */
+.sommaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.sommaire .bouton {
+  padding: 10px 22px;
+}
+
+/* Les titres atteints par une ancre ne passent pas sous l'en-tête collé en haut */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Illustration de la dictée : avatar, onde animée, texte transcrit */
+.illustration-voix {
+  padding: 32px;
+  border-radius: 24px;
+  background-color: var(--creme);
+  box-shadow: var(--ombre);
+}
+
+.illustration-voix__haut {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.illustration-voix__haut .onde {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.onde--active span {
+  animation: onde 0.9s ease-in-out infinite;
+}
+
+.illustration-voix__texte {
+  margin: 20px 0 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background-color: var(--blanc);
+  font-style: italic;
+}
+
+/* Comparaison avant / après : côte à côte sans JS, superposées avec un curseur avec JS */
+.comparaison {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.comparaison__carte {
+  padding: 28px;
+  border-radius: var(--rayon);
+  background-color: var(--blanc);
+  border: 1px solid var(--gris-clair);
+}
+
+.comparaison__carte--apres {
+  border: 2px solid var(--vert);
+  background-color: var(--creme);
+}
+
+.comparaison__etiquette {
+  font-weight: 700;
+  color: var(--gris);
+}
+
+.comparaison__carte--apres .comparaison__etiquette {
+  color: var(--vert);
+}
+
+.comparaison__curseur {
+  display: none;
+}
+
+.comparaison--js {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+}
+
+/* Avec JS : les deux cartes occupent la même case de la grille, l'une sur l'autre */
+.comparaison--js .comparaison__carte {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.comparaison--js .comparaison__curseur {
+  display: block;
+}
+
+.comparaison__curseur input {
+  width: 100%;
+  accent-color: var(--vert);
+  cursor: ew-resize;
+}
+
+/* Schéma du rangement : les traits se dessinent quand le schéma apparaît */
+.schema {
+  max-width: 820px;
+  margin: 40px auto 0;
+}
+
+.schema__source {
+  display: inline-block;
+  margin: 0;
+  padding: 16px 40px;
+  border-radius: 14px;
+  background-color: var(--vert);
+  color: var(--creme);
+  font-weight: 700;
+}
+
+.schema__liens {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+.schema__liens path {
+  fill: none;
+  stroke: var(--vert);
+  stroke-width: 2;
+  stroke-dasharray: 340;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1.2s ease;
+}
+
+.js .schema:not(.visible) .schema__liens path {
+  stroke-dashoffset: 340;
+}
+
+.schema__cibles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schema__cibles li {
+  padding: 16px 8px;
+  border: 2px solid var(--vert);
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--vert);
+  background-color: var(--blanc);
+}
+
+.schema__legende {
+  margin-top: 24px;
+  color: var(--gris);
+}
+
+/* Démo du chatbot */
+.deux-colonnes--chat {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--vert);
+  border-radius: 24px;
+  background-color: var(--blanc);
+  box-shadow: var(--ombre);
+  overflow: hidden;
+}
+
+.chat__entete {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gris-clair);
+  background-color: var(--creme);
+}
+
+.chat__nom {
+  margin: 0;
+  font-weight: 700;
+  color: var(--vert);
+}
+
+.chat__statut {
+  margin-left: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3D7A5A;
+}
+
+.chat__statut::before {
+  content: "● ";
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 320px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.bulle {
+  max-width: 82%;
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.45;
+  animation: arrivee 0.3s ease;
+}
+
+.bulle--essai {
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  background-color: var(--sauge-clair);
+}
+
+.bulle--moi {
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.bulle--ecrit {
+  font-style: italic;
+  color: var(--gris);
+}
+
+@keyframes arrivee {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Les suggestions et la saisie n'apparaissent que si le JavaScript fonctionne */
+.chat__suggestions,
+.chat__formulaire {
+  display: none;
+}
+
+.chat--js .chat__suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 20px 12px;
+}
+
+.chat--js .chat__formulaire {
+  display: flex;
+  gap: 10px;
+  padding: 14px 20px 20px;
+  border-top: 1px solid var(--gris-clair);
+}
+
+.chat__suggestion {
+  padding: 8px 14px;
+  border: 2px solid var(--vert);
+  border-radius: 999px;
+  background-color: var(--blanc);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vert);
+  cursor: pointer;
+}
+
+.chat__suggestion:hover {
+  background-color: var(--sauge-clair);
+}
+
+.chat__formulaire input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 12px 18px;
+  border: 1px solid var(--gris-clair);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--creme);
+}
+
+.chat__envoyer {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--ambre);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Formulaires de la page Contact */
+.contact {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.contact__cote {
+  display: grid;
+  gap: 28px;
+}
+
+.contact__titre {
+  font-size: 1.3rem;
+}
+
+.contact__note {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.formulaire {
+  padding: 36px;
+  border: 1px solid var(--gris-clair);
+  border-radius: 24px;
+  background-color: var(--blanc);
+  box-shadow: var(--ombre);
+}
+
+.formulaire__aide {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+.champ {
+  margin-bottom: 20px;
+}
+
+.champ label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: var(--vert);
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #B8BFBB;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--creme);
+}
+
+.champ textarea {
+  resize: vertical;
+}
+
+.champ input:focus,
+.champ select:focus,
+.champ textarea:focus {
+  outline: 3px solid var(--sauge);
+  border-color: var(--vert);
+}
+
+/* Champ en erreur (attribut posé par formulaire.js) */
+.champ [aria-invalid="true"] {
+  border: 2px solid #B42318;
+  background-color: #FEF3F2;
+}
+
+.champ__erreur {
+  min-height: 1.2em;
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #B42318;
+}
+
+.champ__compteur {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+/* Case à cocher : la case et son texte sur la même ligne */
+.champ--case {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 4px 12px;
+}
+
+.champ--case input {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: var(--vert);
+}
+
+.champ--case label {
+  font-weight: 500;
+  color: var(--texte);
+}
+
+.champ--case .champ__erreur {
+  grid-column: 1 / -1;
+}
+
+.formulaire__confirmation {
+  margin: 16px 0 0;
+  font-weight: 700;
+  color: #3D7A5A;
+}
+
+.liste-attente {
+  padding: 32px;
+  border-radius: 24px;
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.liste-attente h2 {
+  font-size: 1.4rem;
+  color: var(--creme);
+}
+
+.liste-attente input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.liste-attente__message {
+  min-height: 1.2em;
+  margin: 12px 0 0;
+  font-weight: 600;
+  color: #FFC9C2;
+}
+
+.liste-attente__message--ok {
+  color: var(--sauge-clair);
+}
+
+/* Illustration de la page À propos */
+.illustration-idee {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.illustration-idee__trait {
+  fill: none;
+  stroke: var(--vert);
+  stroke-width: 14;
+  stroke-linecap: round;
+}
+
+.illustration-idee__etincelle {
+  fill: var(--ambre);
+  transform-origin: 330px 62px;
+  animation: scintille 2.5s ease-in-out infinite;
+}
+
+.illustration-idee circle {
+  fill: var(--sauge);
+}
+
+@keyframes scintille {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(15deg); }
+}
+
+/* Cartes de l'équipe qui se retournent (effet 3D) au survol ou au focus clavier */
+.membre {
+  min-height: 300px;
+  perspective: 1000px;
+  border-radius: var(--rayon);
+}
+
+.membre__interieur {
+  position: relative;
+  min-height: 300px;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.membre:hover .membre__interieur,
+.membre:focus .membre__interieur {
+  transform: rotateY(180deg);
+}
+
+.membre__face,
+.membre__dos {
+  position: absolute;
+  inset: 0;
+  padding: 32px;
+  border-radius: var(--rayon);
+  backface-visibility: hidden;
+}
+
+.membre__face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--gris-clair);
+  background-color: var(--blanc);
+}
+
+.membre__dos {
+  transform: rotateY(180deg);
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.membre__dos h3 {
+  color: var(--creme);
+}
+
+.membre__dos ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.membre__initiales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 0 16px;
+  border-radius: 50%;
+  background-color: var(--sauge);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--vert);
+}
+
+.membre__role {
+  color: var(--gris);
+}
+
+/* 9. Animations d'apparition au défilement (apparition.js) ------------------ */
+.js .apparition {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js .apparition.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* 10. Pied de page ------------------------------------------------------------ */
+.pied {
+  padding: 56px 0 28px;
+  background-color: var(--vert);
+  color: var(--creme);
+}
+
+.pied__grille {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 32px;
+}
+
+.pied .logo {
+  color: var(--creme);
+}
+
+.pied__slogan {
+  margin-top: 12px;
+  color: var(--sauge);
+}
+
+.pied__titre {
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.pied ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pied li {
+  margin-bottom: 6px;
+}
+
+.pied a {
+  color: var(--creme);
+  text-decoration: none;
+}
+
+.pied a:hover {
+  text-decoration: underline;
+}
+
+.pied__mention {
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(251, 250, 246, 0.2);
+  font-size: 0.85rem;
+  color: var(--sauge);
+}
+
+/* 11. Responsive ------------------------------------------------------------------ */
+
+/* Tablette */
+@media (max-width: 960px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero__grille {
+    grid-template-columns: 1fr;
+  }
+
+  .grille-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .carrousel__carte {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .pied__grille {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .argent {
+    grid-template-columns: 1fr;
+  }
+
+  .deux-colonnes,
+  .deux-colonnes--chat,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  /* Le menu devient un panneau qui s'ouvre avec le burger */
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 24px;
+    background-color: var(--creme);
+    border-bottom: 1px solid var(--gris-clair);
+    box-shadow: var(--ombre);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav .bouton {
+    text-align: center;
+  }
+
+  /* Le panneau est caché tant que le burger n'est pas ouvert (classe ajoutée par menu.js) */
+  .js .nav:not(.ouvert) {
+    display: none;
+  }
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    padding: 40px 0 64px;
+  }
+
+  .boutons .bouton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .telephone {
+    width: 270px;
+  }
+
+  .carrousel__carte {
+    flex-basis: 100%;
+  }
+
+  .carrousel__fleche {
+    display: none;
+  }
+
+  .carrousel--js {
+    padding: 0;             /* sur téléphone : pas de flèches, on glisse du doigt */
+  }
+
+  .pied__grille {
+    grid-template-columns: 1fr;
+  }
+
+  .grille-2,
+  .comparaison {
+    grid-template-columns: 1fr;
+  }
+
+  .schema__cibles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .schema__liens {
+    display: none;
+  }
+
+  .formulaire {
+    padding: 24px;
+  }
+
+  /* Sur téléphone (pas de survol), le détail du travail s'affiche sous la carte */
+  .membre,
+  .membre__interieur {
+    min-height: 0;
+  }
+
+  .membre:hover .membre__interieur,
+  .membre:focus .membre__interieur {
+    transform: none;
+  }
+
+  .membre__face,
+  .membre__dos {
+    position: static;
+    transform: none;
+    backface-visibility: visible;
+  }
+
+  .membre__face {
+    border-radius: var(--rayon) var(--rayon) 0 0;
+  }
+
+  .membre__dos {
+    border-radius: 0 0 var(--rayon) var(--rayon);
+  }
+}
+
+/* Respect du réglage « réduire les animations » du système */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
