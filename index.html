@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="essAI, le journal personnel à commande vocale : tu parles, essAI transcrit, reformule et range tes idées au bon endroit.">
+  <title>essAI&nbsp;: parle, essAI s'occupe du reste</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- defer : les scripts s'exécutent après la lecture du HTML, sans bloquer l'affichage -->
+  <script src="js/menu.js" defer></script>
+  <script src="js/apparition.js" defer></script>
+  <script src="js/demo.js" defer></script>
+  <script src="js/carrousel.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== En-tête commun : titre du site + navigation ===== -->
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="index.html">
+        <img src="img/logo-essai.png" alt="" width="40" height="40">
+        <span>essAI</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="pages/fonctionnalites.html">Fonctionnalités</a></li>
+          <li><a href="pages/tarifs.html">Tarifs</a></li>
+          <li><a href="pages/a-propos.html">À propos</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="bouton bouton--principal" href="pages/tarifs.html">Essayer gratuitement</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Accroche + démo de l'application ===== -->
+    <section class="hero">
+      <div class="conteneur hero__grille">
+        <div>
+          <h1>Parle. <span>essAI s'occupe du reste.</span></h1>
+          <p class="hero__accroche">
+            Une idée te vient au mauvais moment&nbsp;? Dis-la à voix haute, même en vrac.
+            essAI la transcrit, la reformule dans le style de tes notes et la range au bon endroit&nbsp;:
+            une note, une tâche, un projet ou ton agenda.
+          </p>
+          <div class="boutons">
+            <a class="bouton bouton--principal" href="pages/tarifs.html">Essayer gratuitement</a>
+            <a class="bouton bouton--contour" href="#demo" id="rejouer-demo">Voir la démo ▶</a>
+          </div>
+          <p class="hero__transparence">L'essentiel est gratuit. Les abonnements paient les serveurs, pas la pub.</p>
+        </div>
+
+        <!-- Démo animée par js/demo.js. Sans JavaScript, on voit directement le résultat final. -->
+        <figure class="telephone" id="demo">
+          <div class="telephone__ecran demo">
+            <p class="demo__statut">
+              <span class="avatar" aria-hidden="true">
+                <span class="avatar__oeil avatar__oeil--gauche"></span>
+                <span class="avatar__oeil avatar__oeil--droit"></span>
+                <span class="avatar__bouche"></span>
+              </span>
+              <span class="demo__texte-statut">essAI a rangé ton idée</span>
+            </p>
+            <div class="onde" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="demo__transcription">«&nbsp;Idée pour le mémoire&nbsp;: comparer trois méthodes de révision, et trouver des articles avant vendredi.&nbsp;»</p>
+            <ul class="demo__resultat">
+              <li>✔ Note&nbsp;: Mémoire révision</li>
+              <li>✔ Tâche&nbsp;: trouver 5 articles</li>
+              <li>✔ Rappel&nbsp;: vendredi 9 h</li>
+            </ul>
+            <ul class="demo__destinations">
+              <li>Notes</li>
+              <li>Agenda</li>
+              <li>Notion</li>
+            </ul>
+            <div class="demo__micro" aria-hidden="true"></div>
+          </div>
+          <figcaption class="invisible">Démonstration&nbsp;: l'utilisateur dicte une idée, essAI la transcrit puis crée une note, une tâche et un rappel.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Le problème ===== -->
+    <section class="section texte-centre">
+      <div class="conteneur apparition">
+        <h2>Une idée te vient… et tu n'as pas le temps de l'écrire&nbsp;?</h2>
+        <p class="sous-titre">
+          Les meilleures idées arrivent souvent au pire moment&nbsp;: dans les transports, en marchant, juste avant de dormir.
+          Le temps de sortir ses notes, elles sont déjà parties, ou notées trop vite pour être réutilisables.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Comment ça marche ===== -->
+    <section class="section section--creme">
+      <div class="conteneur">
+        <h2 class="apparition">Comment ça marche</h2>
+        <div class="grille-3">
+          <article class="carte apparition">
+            <svg class="carte__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="9" y="2" width="6" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 11a7 7 0 0 0 14 0M12 18v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>1. Tu parles</h3>
+            <p>En vrac, même dans le désordre. Pas besoin de chercher tes mots.</p>
+          </article>
+          <article class="carte apparition">
+            <svg class="carte__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20h4L19 9l-4-4L4 16v4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M13 7l4 4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3>2. essAI reformule</h3>
+            <p>Avec la même présentation et le même ton que tes notes précédentes.</p>
+          </article>
+          <article class="carte apparition">
+            <svg class="carte__icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7h7l2 2h9v11H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>3. essAI range</h3>
+            <p>Dans une note, une tâche, un projet avec ses pistes, ou ton agenda.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Carrousel : exemples de phrases (js/carrousel.js) ===== -->
+    <section class="section" aria-labelledby="titre-exemples">
+      <div class="conteneur">
+        <h2 id="titre-exemples" class="apparition">Ce que tu peux lui dire</h2>
+        <p class="sous-titre apparition">Quelques exemples de dictées, et ce qu'essAI en fait.</p>
+        <div class="carrousel">
+          <button class="carrousel__fleche carrousel__fleche--prec" type="button" aria-label="Exemple précédent">◀</button>
+          <div class="carrousel__fenetre">
+            <ul class="carrousel__piste">
+              <li class="carrousel__carte">
+                <p class="carrousel__phrase">«&nbsp;Rappelle-moi d'appeler le garagiste lundi matin.&nbsp;»</p>
+                <p class="carrousel__effet">→ Un rappel lundi à 9 h dans ton agenda.</p>
+              </li>
+              <li class="carrousel__carte">
+                <p class="carrousel__phrase">«&nbsp;Ajoute fractionné mercredi 18 h et décale la réunion à jeudi.&nbsp;»</p>
+                <p class="carrousel__effet">→ Ton emploi du temps est modifié, avec ton accord.</p>
+              </li>
+              <li class="carrousel__carte">
+                <p class="carrousel__phrase">«&nbsp;Idée d'appli de colocation&nbsp;: on scanne les tickets de courses…&nbsp;»</p>
+                <p class="carrousel__effet">→ Un nouveau projet, avec trois pistes à explorer.</p>
+              </li>
+              <li class="carrousel__carte">
+                <p class="carrousel__phrase">«&nbsp;Liste de courses pour le dîner de samedi.&nbsp;»</p>
+                <p class="carrousel__effet">→ Une note classée dans «&nbsp;Maison&nbsp;».</p>
+              </li>
+              <li class="carrousel__carte">
+                <p class="carrousel__phrase">«&nbsp;Cherche des articles récents sur la révision espacée.&nbsp;»</p>
+                <p class="carrousel__effet">→ Une recherche résumée, ajoutée à ton projet.</p>
+              </li>
+            </ul>
+          </div>
+          <button class="carrousel__fleche carrousel__fleche--suiv" type="button" aria-label="Exemple suivant">▶</button>
+          <div class="carrousel__points"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Intégrations ===== -->
+    <section class="section section--creme texte-centre">
+      <div class="conteneur apparition">
+        <h2>Il range tout là où tu travailles déjà</h2>
+        <p class="sous-titre">essAI agit seulement sur les services que tu connectes, et avec les droits que tu lui donnes.</p>
+        <ul class="etiquettes">
+          <li>Notes Apple</li>
+          <li>Calendrier Apple</li>
+          <li>Google Agenda</li>
+          <li>Notion</li>
+          <li>Obsidian</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Aperçu des offres ===== -->
+    <section class="section">
+      <div class="conteneur">
+        <h2 class="texte-centre apparition">Trois offres, dont une gratuite</h2>
+        <div class="grille-3">
+          <article class="carte offre apparition">
+            <h3>Gratuit</h3>
+            <p>Dictée, transcription et rangement, dans la limite d'un quota mensuel.</p>
+            <p class="offre__prix">0 €</p>
+          </article>
+          <article class="carte offre offre--mise-en-avant apparition">
+            <h3>Plus <span class="badge">Offre de lancement</span></h3>
+            <p>essAI développe tes idées en vrais plans de projet.</p>
+            <p class="offre__prix"><span class="offre__ancien">9,99 €</span>4,99 € <small>/mois</small></p>
+          </article>
+          <article class="carte offre apparition">
+            <h3>Pro <span class="badge">Offre de lancement</span></h3>
+            <p>Des agents autonomes font avancer tes projets pour toi.</p>
+            <p class="offre__prix"><span class="offre__ancien">24,99 €</span>11,99 € <small>/mois</small></p>
+          </article>
+        </div>
+        <div class="boutons boutons--centre">
+          <a class="bouton bouton--sombre" href="pages/tarifs.html">Voir les tarifs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Appel à l'action final ===== -->
+    <section class="section section--creme">
+      <div class="conteneur">
+        <div class="appel apparition">
+          <h2>Ta prochaine idée mérite mieux qu'un oubli.</h2>
+          <p>Commence gratuitement, sans carte bancaire.</p>
+          <a class="bouton bouton--principal" href="pages/tarifs.html">Essayer gratuitement</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Pied de page commun : navigation + lien vers « À propos » ===== -->
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="logo" href="index.html">
+            <img src="img/logo-essai.png" alt="" width="40" height="40">
+            <span>essAI</span>
+          </a>
+          <p class="pied__slogan">Parle. essAI s'occupe du reste.</p>
+        </div>
+        <nav aria-label="Navigation du pied de page">
+          <p class="pied__titre">Navigation</p>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="pages/tarifs.html">Tarifs</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Le projet">
+          <p class="pied__titre">Le projet</p>
+          <ul>
+            <li><a href="pages/a-propos.html">À propos</a></li>
+            <li><a href="https://github.com/lukyanrobin/ProjetProgWeb_TALFER_ROBIN">Dépôt GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="pied__mention">Projet étudiant TI504N, Efrei 2026-2027&nbsp;: Tunui TALFER et Lukyan ROBIN.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
