@@ -1,0 +1,90 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1640' height='1640' viewBox='0 0 1640 1640'>
+<rect width='100%' height='100%' fill='#F4F5F3'/>
+<text x='40' y='28' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#12271F' text-anchor='start'>essAI — maquette ordinateur — Contact (pages/contact.html)</text>
+<text x='1240' y='28' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='end'>niveau 1 — formulaire (exigé par l'énoncé)</text>
+<rect x='40' y='44' width='1200' height='1232' rx='10' fill='#FFFFFF' stroke='#8A918D' stroke-width='1.5'/>
+<text x='1290' y='64' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#12271F' text-anchor='start'>Notes (interactions prévues)</text>
+<rect x='40' y='44' width='1200' height='72' rx='0' fill='#FBFAF6' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='64' y='60' width='40' height='40' rx='11.200000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M72.0 82.0 Q82.0 91.2 92.8 80.0' stroke='#12271F' stroke-width='3.6' fill='none' stroke-linecap='round'/>
+<path d='M93.6 72.8 L95.2 78.4 L100.0 80.0 L95.2 81.6 L93.6 87.2 L92.0 81.6 L87.2 80.0 L92.0 78.4 Z' fill='#12271F'/>
+<text x='116' y='88' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>essAI</text>
+<text x='460' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Accueil</text>
+<text x='550' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Fonctionnalités</text>
+<text x='704' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Tarifs</text>
+<text x='786' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>À propos</text>
+<text x='884' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>Contact</text>
+<rect x='884' y='94' width='56' height='3' fill='#E0A84F'/>
+<rect x='1030' y='62' width='186' height='38' rx='19.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='1123.0' y='86.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Essayer gratuitement</text>
+<rect x='40' y='116' width='1200' height='180' rx='0' fill='#FBFAF6' stroke='#FBFAF6' stroke-width='1.5'/>
+<text x='110' y='206' font-family='Helvetica, Arial, sans-serif' font-size='40' font-weight='bold' fill='#12271F' text-anchor='start'>Une question ? Une idée ?</text>
+<rect x='110' y='236' width='300' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='346' width='660' height='700' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='140' y='386' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='start'>Nom *</text>
+<rect x='140' y='398' width='600' height='46' rx='10' fill='#F4F5F3' stroke='#8A918D' stroke-width='1.5'/>
+<text x='140' y='482' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='start'>E-mail *</text>
+<rect x='140' y='494' width='600' height='46' rx='10' fill='#F4F5F3' stroke='#8A918D' stroke-width='1.5'/>
+<text x='140' y='578' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='start'>Sujet *  (liste : question, partenariat, presse, bug)</text>
+<rect x='140' y='590' width='600' height='46' rx='10' fill='#F4F5F3' stroke='#8A918D' stroke-width='1.5'/>
+<text x='140' y='674' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='start'>Message *</text>
+<rect x='140' y='686' width='600' height='170' rx='10' fill='#F4F5F3' stroke='#8A918D' stroke-width='1.5'/>
+<text x='140' y='880' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#C2410C' text-anchor='start'>⚠ Adresse e-mail invalide</text>
+<rect x='140' y='900' width='20' height='20' rx='4' fill='#FFFFFF' stroke='#8A918D' stroke-width='1.5'/>
+<text x='172' y='916' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>J'accepte que mes données servent à me répondre *</text>
+<rect x='140' y='944' width='200' height='48' rx='24.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='240.0' y='973.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Envoyer</text>
+<circle cx='780' cy='366' r='13' fill='#C2410C'/>
+<text x='780' y='371' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<rect x='820' y='346' width='350' height='300' rx='18' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='846' y='396' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Rejoindre la liste d'attente</text>
+<rect x='846' y='421' width='290' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='846' y='437' width='174' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='846' y='476' width='298' height='44' rx='22' fill='#FBFAF6' stroke='#FBFAF6' stroke-width='1.5'/>
+<rect x='846' y='536' width='180' height='42' rx='21.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='936.0' y='562.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>M'inscrire</text>
+<circle cx='1180' cy='356' r='13' fill='#C2410C'/>
+<text x='1180' y='361' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<rect x='820' y='676' width='350' height='210' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='846' y='716' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#12271F' text-anchor='start'>Nous écrire directement</text>
+<rect x='846' y='741' width='290' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='846' y='761' width='290' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='846' y='781' width='174' height='7' rx='3' fill='#E4E6E3'/>
+<text x='846' y='836' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='start' font-style='italic'>Réponse sous 48 h</text>
+<rect x='40' y='1096' width='1200' height='180' rx='0' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<rect x='72' y='1124' width='34' height='34' rx='9.520000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M78.8 1142.7 Q87.3 1150.52 96.48 1141.0' stroke='#12271F' stroke-width='3.1' fill='none' stroke-linecap='round'/>
+<path d='M97.16 1134.88 L98.52 1139.64 L102.6 1141.0 L98.52 1142.36 L97.16 1147.12 L95.8 1142.36 L91.72 1141.0 L95.8 1139.64 Z' fill='#12271F'/>
+<text x='116' y='1148' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#FBFAF6' text-anchor='start'>essAI</text>
+<text x='72' y='1188' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Parle. essAI s'occupe du reste.</text>
+<text x='460' y='1132' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Navigation</text>
+<text x='460' y='1158' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Accueil</text>
+<text x='460' y='1176' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Fonctionnalités</text>
+<text x='460' y='1194' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Tarifs</text>
+<text x='460' y='1212' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='460' y='1230' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Contact</text>
+<text x='700' y='1132' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Le projet</text>
+<text x='700' y='1158' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='700' y='1176' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Dépôt GitHub</text>
+<text x='700' y='1194' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Maquette</text>
+<text x='940' y='1132' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Légal</text>
+<text x='940' y='1158' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Mentions légales</text>
+<text x='940' y='1176' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Confidentialité</text>
+<text x='72' y='1260' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Projet étudiant TI504N, Efrei 2026-2027 — Tunui TALFER &amp; Lukyan ROBIN</text>
+<circle cx='1304' cy='96' r='13' fill='#C2410C'/>
+<text x='1304' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<text x='1326' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Validation du formulaire en JS</text>
+<text x='1326' y='118' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>avant l'envoi : champs</text>
+<text x='1326' y='135' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>obligatoires, format de</text>
+<text x='1326' y='152' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>l'e-mail, message de 20</text>
+<text x='1326' y='169' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>caractères minimum, messages</text>
+<text x='1326' y='186' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>d'erreur sous les champs,</text>
+<text x='1326' y='203' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>compteur de caractères, message</text>
+<text x='1326' y='220' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>de confirmation.</text>
+<circle cx='1304' cy='250' r='13' fill='#C2410C'/>
+<text x='1304' y='255' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='1326' y='255' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Liste d'attente : vérification</text>
+<text x='1326' y='272' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>de l'e-mail, puis remerciement</text>
+<text x='1326' y='289' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>animé (aucune donnée envoyée :</text>
+<text x='1326' y='306' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>site statique).</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1640' height='1900' viewBox='0 0 1640 1900'>
+<rect width='100%' height='100%' fill='#F4F5F3'/>
+<text x='40' y='28' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#12271F' text-anchor='start'>essAI — maquette ordinateur — À propos (pages/a-propos.html)</text>
+<text x='1240' y='28' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='end'>niveau 1 — exigée par l'énoncé</text>
+<rect x='40' y='44' width='1200' height='1632' rx='10' fill='#FFFFFF' stroke='#8A918D' stroke-width='1.5'/>
+<text x='1290' y='64' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#12271F' text-anchor='start'>Notes (interactions prévues)</text>
+<rect x='40' y='44' width='1200' height='72' rx='0' fill='#FBFAF6' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='64' y='60' width='40' height='40' rx='11.200000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M72.0 82.0 Q82.0 91.2 92.8 80.0' stroke='#12271F' stroke-width='3.6' fill='none' stroke-linecap='round'/>
+<path d='M93.6 72.8 L95.2 78.4 L100.0 80.0 L95.2 81.6 L93.6 87.2 L92.0 81.6 L87.2 80.0 L92.0 78.4 Z' fill='#12271F'/>
+<text x='116' y='88' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>essAI</text>
+<text x='460' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Accueil</text>
+<text x='550' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Fonctionnalités</text>
+<text x='704' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Tarifs</text>
+<text x='786' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>À propos</text>
+<rect x='786' y='94' width='64' height='3' fill='#E0A84F'/>
+<text x='884' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Contact</text>
+<rect x='1030' y='62' width='186' height='38' rx='19.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='1123.0' y='86.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Essayer gratuitement</text>
+<rect x='40' y='116' width='1200' height='220' rx='0' fill='#FBFAF6' stroke='#FBFAF6' stroke-width='1.5'/>
+<text x='110' y='206' font-family='Helvetica, Arial, sans-serif' font-size='40' font-weight='bold' fill='#12271F' text-anchor='start'>Pourquoi essAI existe</text>
+<rect x='110' y='236' width='700' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='254' width='700' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='272' width='420' height='9' rx='3' fill='#E4E6E3'/>
+<text x='110' y='396' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Le problème qu'on veut régler</text>
+<rect x='110' y='426' width='560' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='444' width='560' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='462' width='560' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='480' width='560' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='498' width='560' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='516' width='336' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='740' y='376' width='430' height='220' rx='6' fill='#EEF0ED' stroke='#8A918D' stroke-width='1.5'/>
+<line x1='740' y1='376' x2='1170' y2='596' stroke='#E4E6E3' stroke-width='2'/>
+<line x1='1170' y1='376' x2='740' y2='596' stroke='#E4E6E3' stroke-width='2'/>
+<text x='955.0' y='491.0' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'>illustration : l'idée qui s'envole</text>
+<circle cx='1180' cy='386' r='13' fill='#C2410C'/>
+<text x='1180' y='391' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<text x='110' y='676' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Nos engagements</text>
+<rect x='110' y='706' width='330' height='170' rx='16' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='130' y='726' width='50' height='50' rx='6' fill='#EEF0ED' stroke='#8A918D' stroke-width='1.5'/>
+<line x1='130' y1='726' x2='180' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<line x1='180' y1='726' x2='130' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<text x='155.0' y='756.0' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'></text>
+<text x='130' y='806' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#12271F' text-anchor='start'>Gratuit pour l'essentiel</text>
+<rect x='130' y='826' width='280' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='130' y='840' width='168' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='480' y='706' width='330' height='170' rx='16' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='500' y='726' width='50' height='50' rx='6' fill='#EEF0ED' stroke='#8A918D' stroke-width='1.5'/>
+<line x1='500' y1='726' x2='550' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<line x1='550' y1='726' x2='500' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<text x='525.0' y='756.0' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'></text>
+<text x='500' y='806' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#12271F' text-anchor='start'>Tes données t'appartiennent</text>
+<rect x='500' y='826' width='280' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='500' y='840' width='168' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='850' y='706' width='330' height='170' rx='16' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='870' y='726' width='50' height='50' rx='6' fill='#EEF0ED' stroke='#8A918D' stroke-width='1.5'/>
+<line x1='870' y1='726' x2='920' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<line x1='920' y1='726' x2='870' y2='776' stroke='#E4E6E3' stroke-width='2'/>
+<text x='895.0' y='756.0' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'></text>
+<text x='870' y='806' font-family='Helvetica, Arial, sans-serif' font-size='17' font-weight='bold' fill='#12271F' text-anchor='start'>Des prix transparents</text>
+<rect x='870' y='826' width='280' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='870' y='840' width='168' height='7' rx='3' fill='#E4E6E3'/>
+<text x='110' y='956' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>L'équipe</text>
+<text x='110' y='982' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#8A918D' text-anchor='start'>les membres du projet et le travail de chacun (exigé par l'énoncé)</text>
+<rect x='110' y='1006' width='500' height='250' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<circle cx='190' cy='1086' r='50' fill='#F4F5F3' stroke='#8A918D'/>
+<text x='190' y='1091' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'>photo</text>
+<text x='260' y='1066' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>Tunui TALFER</text>
+<text x='260' y='1091' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='start'>Accueil, Tarifs, CSS commun, démo du téléphone</text>
+<rect x='260' y='1116' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='260' y='1134' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='260' y='1152' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='260' y='1170' width='192' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='650' y='1006' width='500' height='250' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<circle cx='730' cy='1086' r='50' fill='#F4F5F3' stroke='#8A918D'/>
+<text x='730' y='1091' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle' font-style='italic'>photo</text>
+<text x='800' y='1066' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>Lukyan ROBIN</text>
+<text x='800' y='1091' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='start'>Maquette, logo, Fonctionnalités, Contact, chatbot</text>
+<rect x='800' y='1116' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='800' y='1134' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='800' y='1152' width='320' height='7' rx='3' fill='#E4E6E3'/>
+<rect x='800' y='1170' width='192' height='7' rx='3' fill='#E4E6E3'/>
+<circle cx='1180' cy='1016' r='13' fill='#C2410C'/>
+<text x='1180' y='1021' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='110' y='1336' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Le projet</text>
+<rect x='110' y='1366' width='700' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='1384' width='420' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='1416' width='230' height='44' rx='22.0' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='225.0' y='1443.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='middle'>Voir le dépôt GitHub</text>
+<rect x='40' y='1496' width='1200' height='180' rx='0' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<rect x='72' y='1524' width='34' height='34' rx='9.520000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M78.8 1542.7 Q87.3 1550.52 96.48 1541.0' stroke='#12271F' stroke-width='3.1' fill='none' stroke-linecap='round'/>
+<path d='M97.16 1534.88 L98.52 1539.64 L102.6 1541.0 L98.52 1542.36 L97.16 1547.12 L95.8 1542.36 L91.72 1541.0 L95.8 1539.64 Z' fill='#12271F'/>
+<text x='116' y='1548' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#FBFAF6' text-anchor='start'>essAI</text>
+<text x='72' y='1588' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Parle. essAI s'occupe du reste.</text>
+<text x='460' y='1532' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Navigation</text>
+<text x='460' y='1558' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Accueil</text>
+<text x='460' y='1576' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Fonctionnalités</text>
+<text x='460' y='1594' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Tarifs</text>
+<text x='460' y='1612' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='460' y='1630' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Contact</text>
+<text x='700' y='1532' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Le projet</text>
+<text x='700' y='1558' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='700' y='1576' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Dépôt GitHub</text>
+<text x='700' y='1594' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Maquette</text>
+<text x='940' y='1532' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Légal</text>
+<text x='940' y='1558' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Mentions légales</text>
+<text x='940' y='1576' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Confidentialité</text>
+<text x='72' y='1660' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Projet étudiant TI504N, Efrei 2026-2027 — Tunui TALFER &amp; Lukyan ROBIN</text>
+<circle cx='1304' cy='96' r='13' fill='#C2410C'/>
+<text x='1304' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<text x='1326' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Texte de motivation : les idées</text>
+<text x='1326' y='118' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>qui arrivent au mauvais moment</text>
+<text x='1326' y='135' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>et qu'on n'a pas le temps</text>
+<text x='1326' y='152' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>d'écrire.</text>
+<circle cx='1304' cy='182' r='13' fill='#C2410C'/>
+<text x='1304' y='187' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='1326' y='187' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Cartes de l'équipe qui se</text>
+<text x='1326' y='204' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>retournent au survol (CSS 3D)</text>
+<text x='1326' y='221' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>pour afficher le détail du</text>
+<text x='1326' y='238' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>travail de chacun.</text>
+</svg>

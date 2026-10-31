@@ -1,0 +1,187 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1640' height='2240' viewBox='0 0 1640 2240'>
+<rect width='100%' height='100%' fill='#F4F5F3'/>
+<text x='40' y='28' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#12271F' text-anchor='start'>essAI — maquette ordinateur — Tarifs (pages/tarifs.html)</text>
+<text x='1240' y='28' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8A918D' text-anchor='end'>niveau 1 — offres, tableau comparatif, FAQ</text>
+<rect x='40' y='44' width='1200' height='2052' rx='10' fill='#FFFFFF' stroke='#8A918D' stroke-width='1.5'/>
+<text x='1290' y='64' font-family='Helvetica, Arial, sans-serif' font-size='16' font-weight='bold' fill='#12271F' text-anchor='start'>Notes (interactions prévues)</text>
+<rect x='40' y='44' width='1200' height='72' rx='0' fill='#FBFAF6' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='64' y='60' width='40' height='40' rx='11.200000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M72.0 82.0 Q82.0 91.2 92.8 80.0' stroke='#12271F' stroke-width='3.6' fill='none' stroke-linecap='round'/>
+<path d='M93.6 72.8 L95.2 78.4 L100.0 80.0 L95.2 81.6 L93.6 87.2 L92.0 81.6 L87.2 80.0 L92.0 78.4 Z' fill='#12271F'/>
+<text x='116' y='88' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>essAI</text>
+<text x='460' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Accueil</text>
+<text x='550' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Fonctionnalités</text>
+<text x='704' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>Tarifs</text>
+<rect x='704' y='94' width='48' height='3' fill='#E0A84F'/>
+<text x='786' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>À propos</text>
+<text x='884' y='86' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Contact</text>
+<rect x='1030' y='62' width='186' height='38' rx='19.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='1123.0' y='86.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Essayer gratuitement</text>
+<rect x='40' y='116' width='1200' height='200' rx='0' fill='#FBFAF6' stroke='#FBFAF6' stroke-width='1.5'/>
+<text x='640' y='196' font-family='Helvetica, Arial, sans-serif' font-size='36' font-weight='bold' fill='#12271F' text-anchor='middle'>L'essentiel gratuit. Le reste à prix juste.</text>
+<rect x='520' y='236' width='240' height='44' rx='22' fill='#FFFFFF' stroke='#12271F' stroke-width='1.5'/>
+<rect x='524' y='240' width='116' height='36' rx='18' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='582' y='264' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='middle'>Mensuel</text>
+<text x='700' y='264' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='middle'>Annuel −17 %</text>
+<circle cx='790' cy='258' r='13' fill='#C2410C'/>
+<text x='790' y='263' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<rect x='110' y='366' width='330' height='440' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='138' y='416' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>Gratuit</text>
+<text x='138' y='502' font-family='Helvetica, Arial, sans-serif' font-size='34' font-weight='bold' fill='#1B1F1D' text-anchor='start'>0 €</text>
+<text x='192' y='502' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#8A918D' text-anchor='start'>/mois</text>
+<text x='138' y='552' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Dictée et transcription</text>
+<text x='138' y='584' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Rangement automatique</text>
+<text x='138' y='616' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  1 intégration</text>
+<text x='138' y='648' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  30 dictées par mois</text>
+<rect x='138' y='716' width='274' height='46' rx='23.0' fill='#FFFFFF' stroke='#12271F' stroke-width='1.5'/>
+<text x='275.0' y='744.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='middle'>Commencer</text>
+<rect x='480' y='366' width='330' height='440' rx='18' fill='#FBFAF6' stroke='#12271F' stroke-width='2.5'/>
+<rect x='575' y='350' width='140' height='30' rx='15' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='645' y='370' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Le plus choisi</text>
+<text x='508' y='416' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>Plus</text>
+<text x='508' y='456' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='normal' fill='#8A918D' text-anchor='start'>9,99 €</text>
+<line x1='506' y1='450' x2='572' y2='450' stroke='#8A918D' stroke-width='2'/>
+<rect x='590' y='438' width='150' height='24' rx='12' fill='#8FB3A0' stroke='#8FB3A0' stroke-width='1.5'/>
+<text x='665' y='455' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='bold' fill='#12271F' text-anchor='middle'>Offre de lancement</text>
+<text x='508' y='502' font-family='Helvetica, Arial, sans-serif' font-size='34' font-weight='bold' fill='#1B1F1D' text-anchor='start'>4,99 €</text>
+<text x='616' y='502' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#8A918D' text-anchor='start'>/mois</text>
+<text x='508' y='552' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Tout le Gratuit</text>
+<text x='508' y='584' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Approfondissement des idées</text>
+<text x='508' y='616' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Plans de projet détaillés</text>
+<text x='508' y='648' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  500 dictées par mois</text>
+<rect x='508' y='716' width='274' height='46' rx='23.0' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<text x='645.0' y='744.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='middle'>Choisir Plus</text>
+<rect x='850' y='366' width='330' height='440' rx='18' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='878' y='416' font-family='Helvetica, Arial, sans-serif' font-size='24' font-weight='bold' fill='#12271F' text-anchor='start'>Pro</text>
+<text x='878' y='456' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='normal' fill='#8A918D' text-anchor='start'>24,99 €</text>
+<line x1='876' y1='450' x2='942' y2='450' stroke='#8A918D' stroke-width='2'/>
+<rect x='960' y='438' width='150' height='24' rx='12' fill='#8FB3A0' stroke='#8FB3A0' stroke-width='1.5'/>
+<text x='1035' y='455' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='bold' fill='#12271F' text-anchor='middle'>Offre de lancement</text>
+<text x='878' y='502' font-family='Helvetica, Arial, sans-serif' font-size='34' font-weight='bold' fill='#1B1F1D' text-anchor='start'>11,99 €</text>
+<text x='1004' y='502' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#8A918D' text-anchor='start'>/mois</text>
+<text x='878' y='552' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Tout le Plus</text>
+<text x='878' y='584' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Agents autonomes (MCP)</text>
+<text x='878' y='616' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  Claude / ChatGPT connectés</text>
+<text x='878' y='648' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>✔  3 000 dictées par mois</text>
+<rect x='878' y='716' width='274' height='46' rx='23.0' fill='#FFFFFF' stroke='#12271F' stroke-width='1.5'/>
+<text x='1015.0' y='744.0' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#12271F' text-anchor='middle'>Choisir Pro</text>
+<circle cx='1200' cy='376' r='13' fill='#C2410C'/>
+<text x='1200' y='381' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='110' y='896' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Comparer les offres</text>
+<text x='110' y='922' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='normal' fill='#8A918D' text-anchor='start'>tableau HTML (exigé par l'énoncé)</text>
+<rect x='110' y='936' width='1060' height='52' rx='8' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='134' y='969' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Fonctionnalité</text>
+<text x='474' y='969' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Gratuit</text>
+<text x='714' y='969' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Plus</text>
+<text x='954' y='969' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Pro</text>
+<rect x='110' y='988' width='1060' height='46' rx='0' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1017' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Dictées par mois</text>
+<rect x='474' y='1006' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1006' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1006' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='110' y='1034' width='1060' height='46' rx='0' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1063' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Transcription + reformulation</text>
+<rect x='474' y='1052' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1052' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1052' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='110' y='1080' width='1060' height='46' rx='0' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1109' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Intégrations</text>
+<rect x='474' y='1098' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1098' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1098' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='110' y='1126' width='1060' height='46' rx='0' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1155' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Approfondissement</text>
+<rect x='474' y='1144' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1144' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1144' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='110' y='1172' width='1060' height='46' rx='0' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1201' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Agents autonomes</text>
+<rect x='474' y='1190' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1190' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1190' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='110' y='1218' width='1060' height='46' rx='0' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1247' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Assistance</text>
+<rect x='474' y='1236' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='714' y='1236' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<rect x='954' y='1236' width='60' height='9' rx='4' fill='#E4E6E3'/>
+<circle cx='1200' cy='956' r='13' fill='#C2410C'/>
+<text x='1200' y='961' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>3</text>
+<text x='110' y='1366' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Où va ton argent ?</text>
+<rect x='110' y='1396' width='420' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='1414' width='420' height='9' rx='3' fill='#E4E6E3'/>
+<rect x='110' y='1432' width='252' height='9' rx='3' fill='#E4E6E3'/>
+<text x='640' y='1406' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='start'>Serveurs et IA</text>
+<rect x='800' y='1392' width='360' height='20' rx='10' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='800' y='1392' width='216.0' height='20' rx='10' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='640' y='1456' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='start'>Développement</text>
+<rect x='800' y='1442' width='360' height='20' rx='10' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='800' y='1442' width='108.0' height='20' rx='10' fill='#8FB3A0' stroke='#8FB3A0' stroke-width='1.5'/>
+<text x='640' y='1506' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#1B1F1D' text-anchor='start'>Frais bancaires</text>
+<rect x='800' y='1492' width='360' height='20' rx='10' fill='#F4F5F3' stroke='#E4E6E3' stroke-width='1.5'/>
+<rect x='800' y='1492' width='36.0' height='20' rx='10' fill='#E0A84F' stroke='#E0A84F' stroke-width='1.5'/>
+<circle cx='1200' cy='1386' r='13' fill='#C2410C'/>
+<text x='1200' y='1391' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>4</text>
+<text x='110' y='1596' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='bold' fill='#12271F' text-anchor='start'>Questions fréquentes</text>
+<rect x='110' y='1626' width='1060' height='52' rx='12' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1658' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>Pourquoi des prix de lancement ?</text>
+<text x='1140' y='1659' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>−</text>
+<rect x='110' y='1688' width='1060' height='52' rx='12' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1720' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>Puis-je changer d'offre à tout moment ?</text>
+<text x='1140' y='1721' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>+</text>
+<rect x='110' y='1750' width='1060' height='52' rx='12' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1782' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>Que fait essAI de mes données ?</text>
+<text x='1140' y='1783' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>+</text>
+<rect x='110' y='1812' width='1060' height='52' rx='12' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5'/>
+<text x='134' y='1844' font-family='Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#12271F' text-anchor='start'>C'est quoi un agent autonome ?</text>
+<text x='1140' y='1845' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#12271F' text-anchor='start'>+</text>
+<circle cx='1200' cy='1646' r='13' fill='#C2410C'/>
+<text x='1200' y='1651' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>5</text>
+<rect x='40' y='1916' width='1200' height='180' rx='0' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<rect x='72' y='1944' width='34' height='34' rx='9.520000000000001' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<path d='M78.8 1962.7 Q87.3 1970.52 96.48 1961.0' stroke='#12271F' stroke-width='3.1' fill='none' stroke-linecap='round'/>
+<path d='M97.16 1954.88 L98.52 1959.64 L102.6 1961.0 L98.52 1962.36 L97.16 1967.12 L95.8 1962.36 L91.72 1961.0 L95.8 1959.64 Z' fill='#12271F'/>
+<text x='116' y='1968' font-family='Helvetica, Arial, sans-serif' font-size='20' font-weight='bold' fill='#FBFAF6' text-anchor='start'>essAI</text>
+<text x='72' y='2008' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Parle. essAI s'occupe du reste.</text>
+<text x='460' y='1952' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Navigation</text>
+<text x='460' y='1978' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Accueil</text>
+<text x='460' y='1996' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Fonctionnalités</text>
+<text x='460' y='2014' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Tarifs</text>
+<text x='460' y='2032' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='460' y='2050' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Contact</text>
+<text x='700' y='1952' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Le projet</text>
+<text x='700' y='1978' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>À propos</text>
+<text x='700' y='1996' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Dépôt GitHub</text>
+<text x='700' y='2014' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Maquette</text>
+<text x='940' y='1952' font-family='Helvetica, Arial, sans-serif' font-size='14' font-weight='bold' fill='#FBFAF6' text-anchor='start'>Légal</text>
+<text x='940' y='1978' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Mentions légales</text>
+<text x='940' y='1996' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#FBFAF6' text-anchor='start'>Confidentialité</text>
+<text x='72' y='2080' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8FB3A0' text-anchor='start'>Projet étudiant TI504N, Efrei 2026-2027 — Tunui TALFER &amp; Lukyan ROBIN</text>
+<circle cx='1304' cy='96' r='13' fill='#C2410C'/>
+<text x='1304' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>1</text>
+<text x='1326' y='101' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Bascule mensuel/annuel en JS :</text>
+<text x='1326' y='118' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>les prix des cartes et du</text>
+<text x='1326' y='135' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>tableau changent (Plus 49,90</text>
+<text x='1326' y='152' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>€/an au lieu de 99 €, Pro</text>
+<text x='1326' y='169' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>119,90 €/an au lieu de 249 €).</text>
+<circle cx='1304' cy='199' r='13' fill='#C2410C'/>
+<text x='1304' y='204' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>2</text>
+<text x='1326' y='204' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Prix normal barré + prix de</text>
+<text x='1326' y='221' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>lancement (badge « Offre de</text>
+<text x='1326' y='238' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>lancement »).</text>
+<circle cx='1304' cy='268' r='13' fill='#C2410C'/>
+<text x='1304' y='273' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>3</text>
+<text x='1326' y='273' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Tableau HTML (&lt;table&gt;, &lt;thead&gt;,</text>
+<text x='1326' y='290' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>&lt;tbody&gt;), lignes alternées,</text>
+<text x='1326' y='307' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>défilement horizontal sur</text>
+<text x='1326' y='324' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>téléphone.</text>
+<circle cx='1304' cy='354' r='13' fill='#C2410C'/>
+<text x='1304' y='359' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>4</text>
+<text x='1326' y='359' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>Barres qui se remplissent au</text>
+<text x='1326' y='376' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>défilement (animation CSS</text>
+<text x='1326' y='393' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>déclenchée en JS).</text>
+<circle cx='1304' cy='423' r='13' fill='#C2410C'/>
+<text x='1304' y='428' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#FFFFFF' text-anchor='middle'>5</text>
+<text x='1326' y='428' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>FAQ en accordéon (JS) : un clic</text>
+<text x='1326' y='445' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>ouvre la réponse, ferme les</text>
+<text x='1326' y='462' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>autres.</text>
+</svg>

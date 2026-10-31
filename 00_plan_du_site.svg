@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1240' height='620' viewBox='0 0 1240 620'>
+<rect width='100%' height='100%' fill='#F4F5F3'/>
+<text x='40' y='40' font-family='Helvetica, Arial, sans-serif' font-size='18' font-weight='bold' fill='#12271F' text-anchor='start'>essAI — plan du site (arborescence : 2 niveaux maximum, comme l'exige l'énoncé)</text>
+<rect x='470' y='80' width='300' height='90' rx='16' fill='#12271F' stroke='#12271F' stroke-width='1.5'/>
+<text x='620' y='120' font-family='Helvetica, Arial, sans-serif' font-size='22' font-weight='bold' fill='#FBFAF6' text-anchor='middle'>Accueil</text>
+<text x='620' y='148' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#8FB3A0' text-anchor='middle'>index.html — niveau 0</text>
+<line x1='620' y1='170' x2='170' y2='260' stroke='#12271F' stroke-width='2'/>
+<rect x='40' y='260' width='260' height='90' rx='14' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<text x='170' y='300' font-family='Helvetica, Arial, sans-serif' font-size='19' font-weight='bold' fill='#12271F' text-anchor='middle'>Fonctionnalités</text>
+<text x='170' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>pages/fonctionnalites.html — niveau 1</text>
+<line x1='620' y1='170' x2='470' y2='260' stroke='#12271F' stroke-width='2'/>
+<rect x='340' y='260' width='260' height='90' rx='14' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<text x='470' y='300' font-family='Helvetica, Arial, sans-serif' font-size='19' font-weight='bold' fill='#12271F' text-anchor='middle'>Tarifs</text>
+<text x='470' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>pages/tarifs.html — niveau 1</text>
+<line x1='620' y1='170' x2='770' y2='260' stroke='#12271F' stroke-width='2'/>
+<rect x='640' y='260' width='260' height='90' rx='14' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<text x='770' y='300' font-family='Helvetica, Arial, sans-serif' font-size='19' font-weight='bold' fill='#12271F' text-anchor='middle'>À propos</text>
+<text x='770' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>pages/a-propos.html — niveau 1</text>
+<line x1='620' y1='170' x2='1070' y2='260' stroke='#12271F' stroke-width='2'/>
+<rect x='940' y='260' width='260' height='90' rx='14' fill='#FBFAF6' stroke='#12271F' stroke-width='2'/>
+<text x='1070' y='300' font-family='Helvetica, Arial, sans-serif' font-size='19' font-weight='bold' fill='#12271F' text-anchor='middle'>Contact</text>
+<text x='1070' y='326' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>pages/contact.html — niveau 1</text>
+<rect x='70' y='380' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='170' y='400' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#dictee</text>
+<rect x='70' y='420' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='170' y='440' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#reformulation</text>
+<rect x='70' y='460' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='170' y='480' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#rangement</text>
+<rect x='70' y='500' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='170' y='520' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#chatbot</text>
+<rect x='70' y='540' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='170' y='560' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#agents</text>
+<rect x='370' y='380' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='470' y='400' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#offres</text>
+<rect x='370' y='420' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='470' y='440' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#comparatif</text>
+<rect x='370' y='460' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='470' y='480' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#argent</text>
+<rect x='370' y='500' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='470' y='520' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#faq</text>
+<rect x='670' y='380' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='770' y='400' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#probleme</text>
+<rect x='670' y='420' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='770' y='440' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#engagements</text>
+<rect x='670' y='460' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='770' y='480' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#equipe</text>
+<rect x='970' y='380' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='1070' y='400' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#formulaire</text>
+<rect x='970' y='420' width='200' height='30' rx='8' fill='#FFFFFF' stroke='#E4E6E3' stroke-width='1.5' stroke-dasharray='6 4'/>
+<text x='1070' y='440' font-family='Helvetica, Arial, sans-serif' font-size='12' font-weight='normal' fill='#8A918D' text-anchor='middle'>#liste-attente</text>
+<text x='40' y='600' font-family='Helvetica, Arial, sans-serif' font-size='13' font-weight='normal' fill='#1B1F1D' text-anchor='start'>En pointillés : sections de la page (ancres), pas de pages supplémentaires. Chaque page est à 1 clic de l'accueil ; l'en-tête et le pied de page relient toutes les pages entre elles.</text>
+</svg>
