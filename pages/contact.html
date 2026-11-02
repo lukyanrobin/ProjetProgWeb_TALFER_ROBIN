@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une question ou une idée ? Écris à l'équipe d'essAI ou rejoins la liste d'attente.">
+  <title>Contact&nbsp;: essAI</title>
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+  <script src="../js/apparition.js" defer></script>
+  <script src="../js/formulaire.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== En-tête commun : titre du site + navigation ===== -->
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo-essai.png" alt="" width="40" height="40">
+        <span>essAI</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="bouton bouton--principal" href="tarifs.html">Essayer gratuitement</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="conteneur">
+        <h1>Une question&nbsp;? Une idée&nbsp;?</h1>
+        <p class="hero__accroche">Écris-nous : une suggestion, un bug, une envie de partenariat… On lit tout et on répond sous 48 heures.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur contact">
+
+        <!-- ===== Formulaire de contact, vérifié par js/formulaire.js avant l'envoi ===== -->
+        <form class="formulaire apparition" id="formulaire-contact">
+          <h2>Nous écrire</h2>
+          <p class="formulaire__aide">Les champs marqués d'un * sont obligatoires.</p>
+
+          <div class="champ">
+            <label for="nom">Nom *</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required minlength="2" aria-describedby="erreur-nom">
+            <p class="champ__erreur" id="erreur-nom"></p>
+          </div>
+
+          <div class="champ">
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erreur-email">
+            <p class="champ__erreur" id="erreur-email"></p>
+          </div>
+
+          <div class="champ">
+            <label for="sujet">Sujet *</label>
+            <select id="sujet" name="sujet" required aria-describedby="erreur-sujet">
+              <option value="">Choisis un sujet</option>
+              <option value="question">Une question sur essAI</option>
+              <option value="idee">Une idée de fonctionnalité</option>
+              <option value="bug">Signaler un bug</option>
+              <option value="partenariat">Un partenariat</option>
+            </select>
+            <p class="champ__erreur" id="erreur-sujet"></p>
+          </div>
+
+          <div class="champ">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required minlength="20" maxlength="1000" aria-describedby="compteur-message erreur-message"></textarea>
+            <p class="champ__compteur" id="compteur-message">0 / 1000 caractères (20 minimum)</p>
+            <p class="champ__erreur" id="erreur-message"></p>
+          </div>
+
+          <div class="champ champ--case">
+            <input id="accord" name="accord" type="checkbox" required aria-describedby="erreur-accord">
+            <label for="accord">J'accepte que mes informations servent uniquement à me répondre. *</label>
+            <p class="champ__erreur" id="erreur-accord"></p>
+          </div>
+
+          <button class="bouton bouton--principal" type="submit">Envoyer le message</button>
+          <p class="formulaire__confirmation" role="status"></p>
+        </form>
+
+        <div class="contact__cote">
+          <!-- ===== Liste d'attente ===== -->
+          <form class="liste-attente apparition" id="liste-attente">
+            <h2>Rejoindre la liste d'attente</h2>
+            <p>Sois parmi les premiers à essayer essAI et profite des prix de lancement.</p>
+            <label class="invisible" for="email-attente">Ton adresse e-mail</label>
+            <input id="email-attente" name="email-attente" type="email" placeholder="ton.adresse@mail.fr" required aria-describedby="message-attente">
+            <button class="bouton bouton--principal" type="submit">M'inscrire</button>
+            <p class="liste-attente__message" id="message-attente" role="status"></p>
+          </form>
+
+          <div class="carte apparition">
+            <h2 class="contact__titre">Nous écrire directement</h2>
+            <p>Par e-mail : <a href="mailto:contact@essai.example">contact@essai.example</a></p>
+            <p>Les réponses aux questions les plus fréquentes sont sur la page <a href="tarifs.html#titre-faq">Tarifs</a>.</p>
+            <p class="contact__note">essAI est un projet étudiant : ce site est une démonstration, aucun message n'est réellement envoyé.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Pied de page commun : navigation + lien vers « À propos » ===== -->
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="logo" href="../index.html">
+            <img src="../img/logo-essai.png" alt="" width="40" height="40">
+            <span>essAI</span>
+          </a>
+          <p class="pied__slogan">Parle. essAI s'occupe du reste.</p>
+        </div>
+        <nav aria-label="Navigation du pied de page">
+          <p class="pied__titre">Navigation</p>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Le projet">
+          <p class="pied__titre">Le projet</p>
+          <ul>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="https://github.com/lukyanrobin/ProjetProgWeb_TALFER_ROBIN">Dépôt GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="pied__mention">Projet étudiant TI504N, Efrei 2026-2027&nbsp;: Tunui TALFER et Lukyan ROBIN.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
