@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tout ce qu'essAI fait de ta voix : dictée, reformulation dans ton style, rangement automatique, démo du chatbot, approfondissement et agents autonomes.">
+  <title>Fonctionnalités&nbsp;: essAI</title>
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+  <script src="../js/apparition.js" defer></script>
+  <script src="../js/comparaison.js" defer></script>
+  <script src="../js/chatbot.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== En-tête commun : titre du site + navigation ===== -->
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo-essai.png" alt="" width="40" height="40">
+        <span>essAI</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="fonctionnalites.html" aria-current="page">Fonctionnalités</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="bouton bouton--principal" href="tarifs.html">Essayer gratuitement</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Accroche + sommaire de la page ===== -->
+    <section class="hero">
+      <div class="conteneur">
+        <h1>Tout ce qu'essAI fait de ta voix</h1>
+        <p class="hero__accroche">De la dictée en vrac jusqu'au projet qui avance tout seul : voici comment essAI transforme une idée passagère en quelque chose d'utile.</p>
+        <nav class="sommaire" aria-label="Sommaire de la page">
+          <a class="bouton bouton--contour" href="#dictee">Dictée</a>
+          <a class="bouton bouton--contour" href="#reformulation">Reformulation</a>
+          <a class="bouton bouton--contour" href="#rangement">Rangement</a>
+          <a class="bouton bouton--contour" href="#chatbot">Chatbot</a>
+          <a class="bouton bouton--contour" href="#agents">Agents</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== 1. Dictée et transcription ===== -->
+    <section class="section" id="dictee">
+      <div class="conteneur deux-colonnes">
+        <div class="apparition">
+          <h2>1. Dictée et transcription</h2>
+          <p>Appuie sur le micro et parle comme tu penses : des phrases inachevées, des retours en arrière, plusieurs idées mélangées. essAI transcrit tout en direct, même dans le bruit d'un trajet en métro.</p>
+          <p>La dictée fonctionne sur téléphone et sur ordinateur, et tu peux reprendre une idée là où tu l'avais laissée.</p>
+        </div>
+        <div class="illustration-voix apparition" aria-hidden="true">
+          <div class="illustration-voix__haut">
+            <span class="avatar">
+              <span class="avatar__oeil avatar__oeil--gauche"></span>
+              <span class="avatar__oeil avatar__oeil--droit"></span>
+              <span class="avatar__bouche"></span>
+            </span>
+            <div class="onde onde--active">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <p class="illustration-voix__texte">« Euh… pour le dîner de samedi, faut que je demande à Lina si elle vient, et penser au dessert… »</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. Reformulation : comparaison avant / après (js/comparaison.js) ===== -->
+    <section class="section section--creme" id="reformulation">
+      <div class="conteneur">
+        <h2 class="apparition">2. Reformulée dans ton style</h2>
+        <p class="sous-titre apparition">essAI apprend ta façon d'écrire à partir de tes anciennes notes (Notes Apple, Notion, Obsidian) : la note finale ressemble à celles que tu aurais écrites toi-même.</p>
+        <div class="comparaison apparition">
+          <div class="comparaison__carte comparaison__carte--avant">
+            <p class="comparaison__etiquette">Avant : ce que tu as dit</p>
+            <p>« Alors pour le mémoire, euh, je voudrais comparer genre trois méthodes de révision, la répétition espacée surtout, et faut que je trouve des articles, avant vendredi si possible, et demander au prof si c'est ok. »</p>
+          </div>
+          <div class="comparaison__carte comparaison__carte--apres">
+            <p class="comparaison__etiquette">Après : ta note essAI</p>
+            <p><strong>Mémoire : méthodes de révision</strong></p>
+            <ul>
+              <li>Comparer 3 méthodes (focus : répétition espacée)</li>
+              <li>Trouver 5 articles → avant vendredi</li>
+              <li>Valider le sujet avec le prof</li>
+            </ul>
+          </div>
+          <label class="comparaison__curseur">
+            <span class="invisible">Glisser pour comparer la dictée et la note</span>
+            <input type="range" min="0" max="100" value="50">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Rangement : schéma animé au défilement ===== -->
+    <section class="section" id="rangement">
+      <div class="conteneur texte-centre">
+        <h2 class="apparition">3. Rangée au bon endroit</h2>
+        <p class="sous-titre apparition">Une seule dictée peut contenir plusieurs choses. essAI les sépare et range chacune là où elle doit aller.</p>
+        <div class="schema apparition" aria-hidden="true">
+          <p class="schema__source">Ta dictée</p>
+          <svg class="schema__liens" viewBox="0 0 800 90" preserveAspectRatio="none">
+            <path d="M400 0 L100 90"/>
+            <path d="M400 0 L300 90"/>
+            <path d="M400 0 L500 90"/>
+            <path d="M400 0 L700 90"/>
+          </svg>
+          <ul class="schema__cibles">
+            <li>Note</li>
+            <li>Tâche</li>
+            <li>Projet + pistes</li>
+            <li>Agenda</li>
+          </ul>
+        </div>
+        <p class="schema__legende">Concrètement : une note « Dîner de samedi », une tâche « Demander à Lina », et un rappel vendredi pour le dessert.</p>
+        <ul class="etiquettes">
+          <li>Notes Apple</li>
+          <li>Calendrier Apple</li>
+          <li>Google Agenda</li>
+          <li>Notion</li>
+          <li>Obsidian</li>
+          <li>Recherche web</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 4. Démo du chatbot (js/chatbot.js) ===== -->
+    <section class="section section--creme" id="chatbot">
+      <div class="conteneur deux-colonnes deux-colonnes--chat">
+        <div class="chat apparition">
+          <div class="chat__entete">
+            <span class="avatar" aria-hidden="true">
+              <span class="avatar__oeil avatar__oeil--gauche"></span>
+              <span class="avatar__oeil avatar__oeil--droit"></span>
+              <span class="avatar__bouche"></span>
+            </span>
+            <p class="chat__nom">essAI <span class="chat__statut">en ligne</span></p>
+          </div>
+          <!-- aria-live : les nouveaux messages sont annoncés aux lecteurs d'écran -->
+          <div class="chat__messages" aria-live="polite">
+            <p class="bulle bulle--essai">Salut ! Je suis essAI. Dis-moi une idée, même en vrac, et je m'occupe du reste.</p>
+            <p class="bulle bulle--moi">Organise ma semaine</p>
+            <p class="bulle bulle--essai">Je regarde ton agenda… Tu as 3 créneaux libres. Je place ta séance de sport mercredi à 18 h et je décale la réunion d'équipe à jeudi ?</p>
+          </div>
+          <div class="chat__suggestions">
+            <button class="chat__suggestion" type="button">Organise ma semaine</button>
+            <button class="chat__suggestion" type="button">J'ai une idée de projet</button>
+            <button class="chat__suggestion" type="button">Que sais-tu faire ?</button>
+          </div>
+          <form class="chat__formulaire">
+            <label class="invisible" for="chat-message">Ton message pour essAI</label>
+            <input id="chat-message" type="text" name="message" placeholder="Écris à essAI…" autocomplete="off" maxlength="200">
+            <button class="chat__envoyer" type="submit" aria-label="Envoyer le message">➤</button>
+          </form>
+        </div>
+        <div class="apparition">
+          <h2>4. Parle avec essAI</h2>
+          <p>En plus de la dictée, essAI répond à tes questions et à tes demandes : organiser ta semaine, retrouver une note, lancer une recherche, découper un projet en tâches.</p>
+          <p>Essaie la démo : choisis une phrase ou écris la tienne. Les réponses sont préparées à l'avance pour la démonstration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Approfondissement et agents ===== -->
+    <section class="section" id="agents">
+      <div class="conteneur">
+        <h2 class="apparition">5. Aller plus loin : approfondissement et agents</h2>
+        <div class="grille-2">
+          <article class="carte apparition">
+            <p><span class="badge">Offre Plus</span></p>
+            <h3>Approfondissement des idées</h3>
+            <p>À partir d'un simple vocal, essAI développe les pistes, propose des hypothèses, repère ce qui manque et construit un vrai plan de projet, étape par étape.</p>
+          </article>
+          <article class="carte apparition">
+            <p><span class="badge">Offre Pro</span></p>
+            <h3>Agents autonomes</h3>
+            <p>essAI confie ton projet à un assistant IA comme Claude ou ChatGPT, connecté grâce au protocole MCP. L'agent découpe le projet en tâches, commence à le faire avancer, et te demande ton accord aux étapes importantes.</p>
+          </article>
+        </div>
+        <div class="boutons boutons--centre">
+          <a class="bouton bouton--sombre" href="tarifs.html">Comparer les offres</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Pied de page commun : navigation + lien vers « À propos » ===== -->
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="logo" href="../index.html">
+            <img src="../img/logo-essai.png" alt="" width="40" height="40">
+            <span>essAI</span>
+          </a>
+          <p class="pied__slogan">Parle. essAI s'occupe du reste.</p>
+        </div>
+        <nav aria-label="Navigation du pied de page">
+          <p class="pied__titre">Navigation</p>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="fonctionnalites.html" aria-current="page">Fonctionnalités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Le projet">
+          <p class="pied__titre">Le projet</p>
+          <ul>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="https://github.com/lukyanrobin/ProjetProgWeb_TALFER_ROBIN">Dépôt GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="pied__mention">Projet étudiant TI504N, Efrei 2026-2027&nbsp;: Tunui TALFER et Lukyan ROBIN.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
